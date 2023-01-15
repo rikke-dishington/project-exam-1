@@ -1,0 +1,135 @@
+@import "imports/variables.css";
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font), Times, serif;
+  background: var(--primary-grey);
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+p {
+  color: var(--primary-black);
+  margin: 0px;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Header */
+header {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav {
+  flex: 1;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+
+nav ul {
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px 0px 0px;
+}
+
+header label {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav,
+.header-icons {
+  display: block;
+}
+
+/* Icons */
+
+/* cta */
+.cta {
+  font-family: var(--font);
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: var(--primary-grey);
+  background: var(--primary-orange);
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+}
+
+/* Contact form */
+form {
+  padding: 2em;
+  background: var(--primary-grey);
+  border-radius: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1em;
+  margin-top: 2px;
+}
