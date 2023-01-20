@@ -24,10 +24,12 @@ p {
 h1 {
   font-size: 3em;
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.5em;
+  font-weight: 400;
 }
 
 h3 {
@@ -43,46 +45,24 @@ header {
   width: 100%;
   margin: auto;
   display: flex;
-  position: relative;
   align-items: center;
-  font-size: 1.5em;
-  justify-content: space-between;
 }
 
 .logo {
   width: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 nav {
-  flex: 1;
-  display: inline-block;
-  position: relative;
-  align-items: center;
+  margin-left: 25px;
 }
 
 nav ul {
-  align-items: center;
+  padding: 0px;
 }
 
 nav ul li {
   display: inline-block;
-  list-style: none;
-  padding: 0px 20px 0px 0px;
-}
-
-header label {
-  display: none;
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav,
-.header-icons {
-  display: block;
 }
 
 /* Icons */
@@ -105,31 +85,4 @@ header label {
 
 .cta:hover {
   transform: scale(1.1);
-}
-
-/* Contact form */
-form {
-  padding: 2em;
-  background: var(--primary-grey);
-  border-radius: 1rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-top: 2px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-label {
-  display: block;
-  margin-top: 1rem;
-}
-
-.form-error {
-  display: none;
-  color: red;
-  font-size: 1em;
-  margin-top: 2px;
 }

@@ -1,0 +1,43 @@
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  background: var(--primary-green);
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 0px;
+}
+
+/* Contact form */
+form {
+  padding: 2em;
+  background: var(--primary-grey);
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1em;
+  margin-top: 2px;
+}
