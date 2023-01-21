@@ -55,12 +55,13 @@ textarea {
 }
 
 label {
+  margin-top: 40px;
   display: block;
-  margin: 40px 0px;
   font-size: 1em;
 }
 
 #contactForm button {
+  margin-top: 40px;
   font-size: 1em;
 }
 

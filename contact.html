@@ -42,31 +42,29 @@
       <div class="contact-form">
         <form id="contactForm">
           <div>
-            <label
-              >Full name (*)
-              <input type="text" name="fullName" id="fullName" />
+            <label for="fullname"
+              >Full name (*) <input type="text" name="fullName" id="fullName" />
             </label>
             <div class="form-error" id="fullNameError">
-              Please enter your full name.
+              Please enter your full name. Your full name must be at least 5
+              characters.
             </div>
           </div>
           <div>
-            <label
-              >Email address (*)
-              <input type="email" email="email" id="email" />
+            <label for="email"
+              >Email address (*) <input type="email" name="email" id="email" />
             </label>
             <div class="form-error" id="emailError">
               Please enter a valid email address.
             </div>
           </div>
           <div>
-            <label
-              >Subject (*)
-              <input type="text" name="subject" id="subject" />
-            </label>
+            <label for="subject"
+              >Subject (*) <input type="text" name="subject" id="subject"
+            /></label>
             <div class="form-error" id="subjectError">
               Please enter a subject. Your subject must be at least 15
-              characters
+              characters.
             </div>
           </div>
           <div>
@@ -85,5 +83,6 @@
     <footer>
       <p>test</p>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
