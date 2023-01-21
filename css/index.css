@@ -48,14 +48,3 @@ main > * {
 .bside {
   grid-area: bside;
 }
-
-.contact-section {
-  display: flex;
-  flex-direction: row;
-  background: var(--primary-green);
-}
-
-.contact-information {
-  display: flex;
-  flex-direction: column;
-}
