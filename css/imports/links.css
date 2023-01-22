@@ -1,8 +1,35 @@
 /* Links */
-
 a {
-  position: relative;
   text-decoration: none;
+  color: var(--primary-black);
+}
+
+a:hover {
+  text-decoration: underline solid black 2px;
+}
+
+/* Header */
+header a {
+  font-size: 1.5em;
+}
+
+/* cta */
+.cta {
+  font-family: var(--font);
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+  color: var(--primary-grey);
+  background: var(--primary-orange);
+  border: none;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  transform: scale(1.1);
 }
 
 /*
@@ -25,29 +52,3 @@ a:hover::before {
 }
 
 */
-
-/* Header */
-header a {
-  font-size: 1.5em;
-  color: var(--primary-black);
-}
-
-/* cta */
-.cta {
-  font-family: var(--font);
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  color: var(--primary-grey);
-  background: var(--primary-orange);
-  border: none;
-  width: 200px;
-  padding: 1rem;
-  margin-top: 10px;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.cta:hover {
-  transform: scale(1.1);
-}
