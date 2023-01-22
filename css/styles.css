@@ -44,17 +44,14 @@ p {
 /* Header */
 header {
   display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .logo {
-  flex: 1;
-  text-align: left;
-  width: 40%;
+  width: 30%;
 }
 
 nav {
-  flex: 1;
   text-align: center;
 }
 
@@ -76,17 +73,37 @@ nav li {
 footer {
   display: flex;
   flex-direction: column;
+  background: var(--primary-brown);
 }
 
 .footer-content1 {
   display: flex;
   flex-direction: row;
-  border-top: 1px solid black;
-  margin-left: 60px;
 }
 
 .footer-content1 div {
   flex: 1;
+  padding-left: 50px;
+}
+
+.footer-content1 h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-content1 img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.footer-content1 p {
+  font-size: 1em;
+}
+
+.footer-content1 i {
+  display: flex;
+  margin-bottom: 20px;
+  size: 20px;
 }
 
 .footer-copyright {
@@ -95,6 +112,6 @@ footer {
   padding-bottom: 10px;
   padding-top: 10px;
   border-top: 1px solid black;
-  background: var(--primary-green);
-  font-size: 0.8em;
+  background: var(--primary-black);
+  font-size: 0.6em;
 }
