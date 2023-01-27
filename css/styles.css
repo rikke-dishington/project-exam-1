@@ -64,7 +64,6 @@ nav {
   flex: 1;
   text-align: center;
   border-bottom: solid 1px;
-  border-width: 10px;
 }
 
 nav li {
@@ -83,6 +82,7 @@ nav li {
 
 /* Footer */
 footer {
+  margin: 0px;
   display: flex;
   flex-direction: column;
   background: var(--primary-brown);

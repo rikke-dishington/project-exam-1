@@ -12,6 +12,8 @@ async function fetchPosts() {
 
     resultsContainer.innerHTML = "";
 
+    const users = json.data;
+
     json.forEach(function (post) {
       resultsContainer.innerHTML += `<a href="blog-post.html?id=${post.id}" class="card">
                                                 <div class="image" style="background-image: url(${post.featured_media.source_url});"></div>

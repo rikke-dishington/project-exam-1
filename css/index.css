@@ -22,18 +22,22 @@ main > * {
   margin-right: 150px;
 }
 
+.header-image {
+  background: url("../images/marco_duck_water.png") center no-repeat;
+  background-size: cover;
+  width: 1500px;
+}
+
 .about-section {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "nav nav"
-    "aside bside";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header";
   gap: 40px;
 }
 
 .about-section h2 {
-  grid-area: nav;
+  grid-area: header;
 }
 
 .about-section p {
@@ -41,10 +45,28 @@ main > * {
   margin-right: 150px;
 }
 
-.aside {
-  grid-area: aside;
+.about-section img {
+  width: 500px;
 }
 
-.bside {
-  grid-area: bside;
+.our-dogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 60px;
+}
+
+.dog img {
+  width: 500px;
+  height: 300px;
+}
+
+.dog-information {
+  margin-top: 20px;
+}
+
+.dog-information h3 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
