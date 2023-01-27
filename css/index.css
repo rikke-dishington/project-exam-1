@@ -1,31 +1,33 @@
-main > * {
-  margin: 100px 60px;
-}
-
 .header-section {
   display: flex;
   flex-direction: row;
+  margin: 100px 0px 100px 60px;
+  min-height: 50vh;
 }
 
-.header-section h1,
-.header-section p {
+.header-information {
+  flex: 1;
+}
+
+.header-information h1,
+.header-information p {
   padding-bottom: 40px;
 }
 
-.header-section h1 {
+.header-information h1 {
   font-size: 5em;
 }
 
-.header-section p {
+.header-information p {
   font-size: 1.5em;
   font-style: italic;
-  margin-right: 150px;
+  margin-right: 250px;
 }
 
 .header-image {
+  flex: 1;
   background: url("../images/marco_duck_water.png") center no-repeat;
   background-size: cover;
-  width: 1500px;
 }
 
 .about-section {
@@ -34,6 +36,7 @@ main > * {
   grid-template-rows: auto;
   grid-template-areas: "header header";
   gap: 40px;
+  margin-left: 60px;
 }
 
 .about-section h2 {
@@ -54,6 +57,7 @@ main > * {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 60px;
+  margin-left: 60px;
 }
 
 .dog img {

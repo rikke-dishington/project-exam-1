@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 .about-us {
   display: flex;
   flex-direction: row;
@@ -6,6 +10,7 @@
 }
 
 .about-us-info {
+  flex: 1;
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -34,5 +39,8 @@
 }
 
 .about-us-image {
+  flex: 1;
+  background: url("../images/bajas_sleeping.png") center no-repeat;
+  background-size: cover;
   margin-right: 0px;
 }

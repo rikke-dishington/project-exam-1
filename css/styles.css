@@ -71,6 +71,10 @@ nav li {
   padding: 20px;
 }
 
+.divider {
+  margin: 100px 0px;
+}
+
 .black-line {
   width: 50%;
   margin: 0 auto;
