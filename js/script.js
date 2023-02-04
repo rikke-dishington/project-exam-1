@@ -1,16 +1,25 @@
-const resultsContainer = document.querySelector(".blog");
-
-const baseURL =
+const url =
   "https://rikkedishingtonschool.com/project-exam/wp-json/wp/v2/posts";
+
+const resultsContainer = document.querySelector(".blog");
 
 async function fetchPosts() {
   try {
-    const response = await fetch(baseURL);
-    const json = await response.json();
+    const response = await fetch(url);
+    const results = await response.json();
 
-    console.log(json);
+    console.log(results);
+  } catch (error) {
+    console.log(error);
+    resultsContainer.innerHTML = error.message;
+  }
+}
 
-    resultsContainer.innerHTML = "";
+fetchPosts();
+
+/*
+
+ resultsContainer.innerHTML = "";
 
     const users = json.data;
 
@@ -22,10 +31,5 @@ async function fetchPosts() {
                                                 </div>
                                             </a>`;
     });
-  } catch (error) {
-    console.log(error);
-    resultsContainer.innerHTML = error.message;
-  }
-}
 
-fetchPosts();
+    */
