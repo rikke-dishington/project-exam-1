@@ -13,6 +13,7 @@
 }
 
 .card {
+  border: 1px solid var(--border);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -22,10 +23,19 @@
   object-fit: cover;
 }
 
+.card-title,
+.card-subtitle,
+.card-text,
+.card-link {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .card-title {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card-subtitle {
@@ -36,43 +46,14 @@
 
 .card-text {
   font-size: 1em;
+  margin-bottom: 40px;
 }
 
-/*.card {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  max-width: 300px;
-  margin: 1rem;
-  border-radius: 1rem;
-  text-decoration: none;
+.card-link {
+  font-size: 1em;
 }
 
-.card a.details {
-  margin-top: 0.5em;
-  background-color: var(--grey) !important;
-  color: white !important;
-}
-
-.card a.details:hover {
-  background-color: var(--light-grey) !important;
-  color: var(--grey) !important;
-}
-
-.card div.details {
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1.25rem;
-  background: white;
-}
-
-.name {
-  font-size: 16px;
-  margin-bottom: 0.75rem;
-  color: var(--grey);
-  font-weight: bold;
-}
-
+/* 
 .image {
   height: 150px;
   background-size: cover;
