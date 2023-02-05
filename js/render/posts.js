@@ -24,23 +24,53 @@ export function createCard(children) {
   return card;
 }
 
+export function createCardImage(cardImage) {
+  return createPostsElement("img", ["card-image"], undefined, cardImage);
+}
+
 export function createCardTitle(titleText) {
-  return createPostsElement("h2", ["card-title"], undefined, titleText);
+  return createPostsElement(
+    "h2",
+    ["card-title"],
+    undefined,
+    undefined,
+    titleText
+  );
 }
 
 export function createCardSubtitle(titleText) {
-  return createPostsElement("h3", ["card-subtitle"], undefined, titleText);
+  return createPostsElement(
+    "h3",
+    ["card-subtitle"],
+    undefined,
+    undefined,
+    titleText
+  );
 }
 
 export function createCardText(cardText) {
-  return createPostsElement("p", ["card-text"], undefined, cardText);
+  return createPostsElement("p", ["card-text"], undefined, undefined, cardText);
 }
 
 export function createCardLink(linkText, linkUrl) {
-  return createPostsElement("a", ["card-link"], undefined, linkText, linkUrl);
+  return createPostsElement(
+    "a",
+    ["card-link"],
+    undefined,
+    undefined,
+    linkText,
+    linkUrl
+  );
 }
 
-export function createPostsElement(tagname, classes, children, text, link) {
+export function createPostsElement(
+  tagname,
+  classes,
+  children,
+  image,
+  text,
+  link
+) {
   const element = document.createElement(tagname);
 
   if (Array.isArray(classes) && classes.length) {
@@ -49,6 +79,10 @@ export function createPostsElement(tagname, classes, children, text, link) {
 
   if (Array.isArray(children) && children.length) {
     element.append(...children);
+  }
+
+  if (image) {
+    element.background = image;
   }
 
   if (text) {
@@ -63,12 +97,13 @@ export function createPostsElement(tagname, classes, children, text, link) {
 }
 
 export function createHtmlObject(post) {
+  const image = createCardImage(post.info.image);
   const title = createCardTitle(post.info.name);
   const subtitle = createCardSubtitle(post.info.date);
   const text = createCardText(post.info.description);
-  const email = createCardLink();
+  const email = createCardLink(post.info.email);
 
-  const childItems = [title, subtitle, text, email];
+  const childItems = [image, title, subtitle, text, email];
 
   const col = createColumn();
   const card = createCard(childItems);
