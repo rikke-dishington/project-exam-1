@@ -82,7 +82,7 @@ export function createPostsElement(
   }
 
   if (image) {
-    element.background = image;
+    // element.background = image;
   }
 
   if (text) {
@@ -96,14 +96,19 @@ export function createPostsElement(
   return element;
 }
 
-export function createHtmlObject(post) {
-  const image = createCardImage(post.info.image);
-  const title = createCardTitle(post.info.name);
-  const subtitle = createCardSubtitle(post.info.date);
-  const text = createCardText(post.info.description);
-  const email = createCardLink(post.info.email);
+export function createHTMLElement(innerHTML) {
+  const element = document.createElement("div");
+  element.innerHTML = innerHTML;
+  return element;
+}
 
-  const childItems = [image, title, subtitle, text, email];
+export function createHtmlObject(post) {
+  const image = createCardImage(post.image);
+  const title = createCardTitle(post.title.rendered);
+  const subtitle = createCardSubtitle(post.date);
+  const text = createHTMLElement(post.content.rendered);
+
+  const childItems = [image, title, subtitle, text];
 
   const col = createColumn();
   const card = createCard(childItems);

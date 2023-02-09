@@ -1,11 +1,19 @@
 const url = "https://www.mydigihelp.no/wp-json/wp/v2/posts";
 const postsContainer = document.querySelector(".posts-container");
 
-async function getPosts() {
+export async function getPosts(page, perPage = 10) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(
+      `https://www.mydigihelp.no/wp-json/wp/v2/posts?page=${page}&per_page=${perPage}`
+    );
     const posts = await response.json();
-    
+    return posts;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+/*
     let html = "";
     for (const post of posts) {
       const postID = post.id;
@@ -21,9 +29,9 @@ async function getPosts() {
                </div>`;
     }
     postsContainer.innerHTML = html;
+
   } catch (error) {
     console.error(error);
   }
-}
 
-getPosts();
+     */
