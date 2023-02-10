@@ -21,8 +21,7 @@ header a {
   color: var(--primary-grey);
   background: var(--primary-orange);
   border: none;
-  width: 200px;
-  height: 60px;
+  padding: 20px 60px;
   cursor: pointer;
   border-radius: 0.2rem;
   transition: all 0.2s ease-in-out;

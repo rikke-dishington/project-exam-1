@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Retriever Gundog Club" />
-    <title>Retriever Gundog Club | Home</title>
+    <meta name="description" content="Welcome to Retriever Gundog Blog" />
+    <title>Retriever Gundog Blog | Home</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/blog.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
@@ -13,8 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script defer type="module" src="./js/data/dogs.js"></script>
     <script defer type="module" src="./js/renderDogs.js"></script>
-    <script defer type="module" src="./js/blog-post.js"></script>
+    <script defer type="module" src="./js/index.js"></script>
+    <script defer src="js/contact.js"></script>
   </head>
   <body>
     <header>
@@ -29,22 +31,22 @@
       </nav>
     </header>
     <main>
-      <section class="header-section">
-        <div class="header-information">
-          <h1>Retriever Gundog Club</h1>
+      <section class="intro-section">
+        <div class="intro-information">
+          <h1>Retriever Gundog Blog</h1>
           <p>
             This is a blog for all who are interested in retriever gundogs. We
             are two women who write about our experiences and share tips and
             tricks.
           </p>
-          <button class="cta">Contact</button>
+          <a href="contact.html" class="cta">Contact</a>
         </div>
-        <div class="header-image"></div>
+        <div class="intro-image"></div>
       </section>
       <section class="divider"><div class="black-line"></div></section>
       <section class="about-section">
         <h2>About Us</h2>
-        <div class="side">
+        <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -54,32 +56,23 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
-        <div class="side">
           <img
             src="images/field_trial_jugde.png"
             alt="Rikke and Pippin competing"
           />
         </div>
-        <div class="side">
+        <div>
           <img src="images/groupphoto.png" alt="Group photo of all our dogs" />
-        </div>
-        <div class="side">
-          <button class="cta">Read more</button>
+          <a href="about.html" class="cta">Read more</a>
         </div>
       </section>
       <section class="divider"><div class="black-line"></div></section>
       <section class="blog-list-container">
         <h2>Latest Posts</h2>
-        <div class="blog-carousel">
-          <div class="blog-list"></div>
-          <div class="carousel-nav">
-            <button class="carousel-button">Prev</button>
-            <button class="carousel-button">Next</button>
-          </div>
-        </div>
+        <div class="blog-list-carousel"></div>
+        <button id="carousel-button-prev" class="cta">Previous</button>
+        <button id="carousel-button-next" class="cta">Next</button>
       </section>
-      <section class="latests-posts"></section>
       <section class="divider"><div class="black-line"></div></section>
       <section class="our-gundogs">
         <h2>Our Gundogs</h2>
@@ -174,7 +167,5 @@
         </section>
       </footer>
     </main>
-    <script type="module" src="js/data/dogs.js"></script>
-    <script src="js/contact.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 import { onClick } from "../listeners/onClick.js";
 
+//functions to create html card for posts
 export function renderPost(post, parentElement) {
   const postHTML = createHtmlObject(post);
   parentElement.append(postHTML);
