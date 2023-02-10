@@ -1,4 +1,4 @@
-const blogPostContainer = document.querySelector(".blog-content");
+const blogPostContainer = document.querySelector(".blog-post-content");
 
 const queryString = document.location.search;
 
@@ -20,6 +20,7 @@ async function fetchPost() {
 
     console.log(post);
 
+    createTitle(post);
     createHtml(post);
   } catch (error) {
     console.log(error);
@@ -31,8 +32,13 @@ async function fetchPost() {
 
 fetchPost();
 
+function createTitle(post) {
+  document.title = `Retriever Gundog Club | Blog | ${post.title.rendered}`;
+}
+
 function createHtml(post) {
   blogPostContainer.innerHTML = `<h1>${post.title.rendered}</h1>
-                                <p>${post.content.render}</p>
-                                <a href="blog.html" class="cta">Back</a>`;
+                                    <p class="date">${post.modified}</p>
+                                    ${post.content.rendered}
+                                    <a href="blog.html" class="cta">Back</a>`;
 }

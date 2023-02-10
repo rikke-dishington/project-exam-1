@@ -107,10 +107,10 @@ export function createHtmlObject(post) {
   const image = createCardImage(post.image);
   const title = createCardTitle(post.title.rendered);
   const subtitle = createCardSubtitle(post.modified);
-  const text = createHTMLElement(post.content.rendered);
+  /* const text = createHTMLElement(post.content.rendered);*/
   const link = createCardLink("blog-post.html?id=" + post.id);
 
-  const childItems = [image, title, subtitle, text, link];
+  const childItems = [image, title, subtitle, link];
 
   const col = createColumn();
   const card = createCard(childItems);
