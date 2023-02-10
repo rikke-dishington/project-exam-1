@@ -53,13 +53,13 @@ export function createCardText(cardText) {
   return createPostsElement("p", ["card-text"], undefined, undefined, cardText);
 }
 
-export function createCardLink(linkText, linkUrl) {
+export function createCardLink(linkUrl) {
   return createPostsElement(
     "a",
     ["card-link"],
     undefined,
     undefined,
-    linkText,
+    "Read more",
     linkUrl
   );
 }
@@ -106,10 +106,11 @@ export function createHTMLElement(innerHTML) {
 export function createHtmlObject(post) {
   const image = createCardImage(post.image);
   const title = createCardTitle(post.title.rendered);
-  const subtitle = createCardSubtitle(post.date);
+  const subtitle = createCardSubtitle(post.modified);
   const text = createHTMLElement(post.content.rendered);
+  const link = createCardLink("blog-post.html?id=" + post.id);
 
-  const childItems = [image, title, subtitle, text];
+  const childItems = [image, title, subtitle, text, link];
 
   const col = createColumn();
   const card = createCard(childItems);

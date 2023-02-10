@@ -2,6 +2,7 @@
   margin: 100px 500px 100px 500px;
 }
 
-.cta {
-  margin-top: 50px;
+.blog-content {
+  display: flex;
+  flex-direction: column;
 }
