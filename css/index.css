@@ -92,7 +92,7 @@
 
 .dog-information {
   margin-top: 20px;
-  margin-right: 0px;
+  margin-right: 20px;
 }
 
 .dog-information h3 {
@@ -104,6 +104,7 @@
 .dog-information p {
   font-size: 1em;
 }
+
 /* Divider */
 .divider {
   margin: 100px 0px;
