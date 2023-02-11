@@ -104,4 +104,9 @@
     margin: 0px;
     padding: 40px 100px;
   }
+
+  /* About us */
+  .about-us-info {
+    margin-left: 60px;
+  }
 }
