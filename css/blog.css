@@ -1,20 +1,5 @@
 .blog-list-container {
+  display: flex;
+  flex-direction: column;
   margin: 100px 60px 50px 60px;
 }
-
-/* 
-.image {
-  height: 150px;
-  background-size: cover;
-  background-position: center top;
-}
-*/
-
-/*
-body {
-  font-family: var(--font), Times, serif;
-  background: var(--primary-grey);
-  max-width: 600px;
-  margin: 0 auto;
-}
-*/

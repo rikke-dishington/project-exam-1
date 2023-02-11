@@ -66,62 +66,37 @@
 }
 
 /* Latest Posts */
+.latest-posts-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.latest-posts-section > h2 {
+  margin-bottom: 60px;
+}
+
 .blog-list-carousel {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+  /*position: relative;*/
+}
+
+.blog-list-carousel-nav {
   display: flex;
-  height: 350px;
-  position: relative;
+  justify-content: center;
+  gap: 20px;
 }
-
-/*
-.col {
-  width: 100%;
-  position: absolute;
-  height: 350px;
-  transition: all 0.5s;
-}
-
-*/
-
-/*
-.blog-list {
-  display: flex;
-}
-
-.col {
-  display: none;
-}
-
-.col-selected {
-  display: block;
-}
-
-.carousel-nav {
-  width: 100%;
-  padding: 20px 0px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel-button {
-  width: 100px;
-  height: 40px;
-  display: inline-block;
-  margin: 0 5px;
-}
-
-/*
-.col {
-  height: 300px;
-}
-
-*/
 
 /* Our Gundogs */
-.our-gundogs h2 {
+.our-gundogs-section {
   margin-left: 60px;
+}
+
+.our-gundogs-section > h2 {
   margin-bottom: 60px;
 }
 
@@ -130,7 +105,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 60px;
-  margin: 0px 60px;
 }
 
 .dog img {
