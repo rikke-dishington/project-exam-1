@@ -19,7 +19,8 @@
     font-size: 1em;
   }
 
-  /* Index & About */
+  /* Index */
+  /* Intro & About */
   .intro-section,
   .about-section {
     flex-direction: row;
@@ -58,7 +59,8 @@
     display: none;
   }
 
-  /*Index & About */
+  /* Index */
+  /* Intro & About */
   .intro-section,
   .about-section {
     margin: 100px 0px 100px 60px;
@@ -66,5 +68,29 @@
   .intro-information p,
   .about-information p {
     margin-right: 200px;
+  }
+
+  /* Our Dogs */
+  .our-gundogs-section {
+    margin-left: 60px;
+  }
+
+  .our-dogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact section */
+
+  .contact-section {
+    margin-left: 60px;
+  }
+
+  .contact-section {
+    flex-direction: row;
+  }
+
+  .contact-information {
+    flex-direction: column;
+    margin-left: 60px;
   }
 }

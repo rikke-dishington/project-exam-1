@@ -146,9 +146,9 @@ header label {
 /* Contact section */
 .contact-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 100px;
-  margin-left: 60px;
+  margin-left: 20px;
   margin-bottom: 100px;
   background: var(--primary-green);
 }
@@ -158,7 +158,7 @@ header label {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .contact-information h1,
@@ -188,6 +188,7 @@ header label {
 }
 
 form {
+  margin: 0px 20px;
   padding: 40px 100px;
   background: var(--primary-grey);
 }
