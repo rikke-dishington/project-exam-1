@@ -31,6 +31,11 @@
   .dog-information {
     margin-right: 100px;
   }
+
+  /* Blog Page */
+  .blog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
