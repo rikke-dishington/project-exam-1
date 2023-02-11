@@ -61,7 +61,7 @@
     display: none;
   }
 
-  /* Index */
+  /* Index page */
   /* Intro & About */
   .intro-section,
   .about-section {
@@ -101,8 +101,13 @@
     padding: 40px 100px;
   }
 
-  /* About us */
+  /* About us page */
   .about-us-info {
     margin: 0px 60px;
+  }
+
+  /* Blog page */
+  .blog-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
