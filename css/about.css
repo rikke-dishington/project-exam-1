@@ -11,8 +11,7 @@ body {
 
 .about-us-info {
   flex: 1;
-  margin-left: 20px;
-  margin-right: 60px;
+  margin: 0px 20px;
 }
 
 .about-us-info h1 {
