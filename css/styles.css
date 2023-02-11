@@ -49,7 +49,7 @@ header {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  border-bottom: none;
+  border-bottom: solid 1px;
 }
 
 .active {
@@ -63,7 +63,7 @@ header {
 nav {
   display: none;
   position: absolute;
-  top: 100px;
+  top: 70px;
   right: 0px;
   background-color: var(--primary-grey);
   border: solid 1px;

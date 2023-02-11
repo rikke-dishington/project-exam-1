@@ -35,10 +35,6 @@
 
 @media (min-width: 1024px) {
   /* Header */
-  header {
-    border-bottom: solid 1px;
-  }
-
   .logo {
     margin-left: 60px;
   }
