@@ -19,7 +19,7 @@
     font-size: 1em;
   }
 
-  /* Index */
+  /* Index & About */
   .intro-section,
   .about-section {
     flex-direction: row;
@@ -52,5 +52,11 @@
 
   header label {
     display: none;
+  }
+
+  /*Index & About */
+  .intro-information p,
+  .about-information p {
+    margin-right: 200px;
   }
 }
