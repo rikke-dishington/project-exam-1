@@ -12,7 +12,7 @@
 
 .intro-information h1,
 .intro-information p {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .intro-information h1 {
@@ -61,8 +61,7 @@
 }
 
 .about-section .cta {
-  margin-top: 100px;
-  margin-right: 100px;
+  margin: 100px 300px;
 }
 
 /* Latest Posts */
