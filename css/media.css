@@ -32,6 +32,10 @@
     border-bottom: solid 1px;
   }
 
+  .logo {
+    margin-left: 60px;
+  }
+
   nav {
     display: inline-block;
     position: relative;
@@ -55,6 +59,10 @@
   }
 
   /*Index & About */
+  .intro-section,
+  .about-section {
+    margin: 100px 0px 100px 60px;
+  }
   .intro-information p,
   .about-information p {
     margin-right: 200px;
