@@ -25,6 +25,11 @@
   .about-section {
     flex-direction: row;
   }
+
+  /* Our Dogs */
+  .dog-information {
+    margin-right: 100px;
+  }
 }
 
 @media (min-width: 1024px) {
