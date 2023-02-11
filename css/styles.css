@@ -148,7 +148,7 @@ header label {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-bottom: 100px;
   background: var(--primary-green);
 }
