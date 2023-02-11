@@ -104,13 +104,16 @@ export function createHTMLElement(innerHTML) {
 }
 
 export function createHtmlObject(post) {
+  const date = new Date(post.modified);
+  const excerpt = post.excerpt.rendered;
+
   const image = createCardImage(post.image);
   const title = createCardTitle(post.title.rendered);
-  const subtitle = createCardSubtitle(post.modified);
-  /* const text = createHTMLElement(post.content.rendered);*/
+  const subtitle = createCardSubtitle(date.toLocaleDateString());
+  const text = createCardText(excerpt.replace(/<\/?p>/g, ""));
   const link = createCardLink("blog-post.html?id=" + post.id);
 
-  const childItems = [image, title, subtitle, link];
+  const childItems = [image, title, subtitle, text, link];
 
   const col = createColumn();
   const card = createCard(childItems);
