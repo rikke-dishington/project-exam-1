@@ -80,7 +80,6 @@
   }
 
   /* Contact section */
-
   .contact-section {
     margin-left: 60px;
   }
@@ -89,8 +88,13 @@
     flex-direction: row;
   }
 
-  .contact-information {
-    flex-direction: column;
-    margin-left: 60px;
+  /* Contact form */
+  .contact-form {
+    flex: 1;
+    margin: 60px 0px;
+  }
+
+  form {
+    padding: 40px 100px;
   }
 }
