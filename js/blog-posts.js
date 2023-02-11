@@ -13,6 +13,10 @@ const url =
 
 console.log(url);
 
+const img =
+  "https://rikkedishingtonschool.com/project-exam/wp-json/wp/v2/posts?_embed";
+console.log(img);
+
 async function fetchPost() {
   try {
     const response = await fetch(url);
@@ -37,7 +41,8 @@ function createTitle(post) {
 }
 
 function createHtml(post) {
-  blogPostContainer.innerHTML = `<h1>${post.title.rendered}</h1>
+  blogPostContainer.innerHTML = `
+                                    <h1>${post.title.rendered}</h1>
                                     <p class="date">${post.modified}</p>
                                     ${post.content.rendered}
                                     <a href="blog.html" class="cta">Back</a>`;
