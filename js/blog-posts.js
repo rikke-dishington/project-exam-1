@@ -61,8 +61,8 @@ function createHtml(post) {
   modal.style.textAlign = "center";
   modal.style.cursor = "pointer";
 
-  modalImg.style.maxWidth = "auto";
-  modalImg.style.maxHeight = "auto";
+  modalImg.style.width = "auto";
+  modalImg.style.height = "auto";
   modalImg.style.margin = "10% auto";
 
   modal.appendChild(modalImg);
