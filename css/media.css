@@ -22,7 +22,8 @@
   /* Index */
   /* Intro & About */
   .intro-section,
-  .about-section {
+  .about-section,
+  .about-us {
     flex-direction: row;
   }
 
@@ -100,6 +101,7 @@
   }
 
   form {
+    margin: 0px;
     padding: 40px 100px;
   }
 }
