@@ -112,6 +112,10 @@
   }
 
   /* Blog page */
+  .blog-list-container {
+    margin: 100px 60px 50px 60px;
+  }
+
   .blog-list {
     grid-template-columns: repeat(3, 1fr);
   }
