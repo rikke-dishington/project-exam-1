@@ -3,3 +3,8 @@
   flex-direction: column;
   margin: 100px 60px 50px 60px;
 }
+
+.cta {
+  margin: auto;
+  width: 50%;
+}

@@ -44,4 +44,38 @@ function createHtml(post) {
                                     <p class="date">${date.toLocaleDateString()}</p>
                                     ${post.content.rendered}
                                     <a href="blog.html" class="cta">Back</a>`;
+
+  // Make images clickable
+  const images = document.querySelectorAll("figure img");
+  const modal = document.createElement("div");
+  const modalImg = document.createElement("img");
+
+  modal.style.display = "none";
+  modal.style.position = "fixed";
+  modal.style.top = 0;
+  modal.style.right = 0;
+  modal.style.bottom = 0;
+  modal.style.left = 0;
+  modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+  modal.style.zIndex = 1;
+  modal.style.textAlign = "center";
+  modal.style.cursor = "pointer";
+
+  modalImg.style.maxWidth = "auto";
+  modalImg.style.maxHeight = "auto";
+  modalImg.style.margin = "10% auto";
+
+  modal.appendChild(modalImg);
+  document.body.appendChild(modal);
+
+  images.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      modalImg.src = e.target.src;
+      modal.style.display = "block";
+    });
+  });
+
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 }
