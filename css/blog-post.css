@@ -15,21 +15,10 @@ main {
 }
 
 .blog-post-content * {
-  margin-bottom: 50px;
-}
-
-.blog-post-content > h1 {
-  font-size: 4em;
-  font-weight: 500;
-}
-
-.date {
-  font-size: 1em;
+  margin-bottom: 40px;
 }
 
 .blog-post-content > h3 {
-  font-size: 2em;
-  font-weight: 500;
   margin-bottom: 10px;
 }
 

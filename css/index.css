@@ -22,7 +22,7 @@
 .intro-information p {
   font-size: 1.5em;
   font-style: italic;
-  margin-right: 250px;
+  margin-right: 200px;
 }
 
 .intro-image {
@@ -114,14 +114,18 @@
 
 .dog-information {
   margin-top: 20px;
+  margin-right: 100px;
 }
 
 .dog-information h3 {
   font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
+.dog-information p {
+  font-size: 1em;
+}
 /* Divider */
 .divider {
   margin: 100px 0px;
@@ -131,5 +135,5 @@
   width: 50%;
   margin: 0 auto;
   height: 1px;
-  background-color: black;
+  background-color: var(--primary-black);
 }
