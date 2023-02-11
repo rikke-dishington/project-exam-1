@@ -1,5 +1,5 @@
 import { getPosts } from "./data/api.js";
-import { renderPosts } from "./render/posts.js";
+import { renderPosts, clearPostList } from "./render/posts.js";
 
 let page = 1;
 
@@ -13,7 +13,9 @@ export async function onViewPrev() {
 
   page--;
 
-  const newPost = await getPosts(page, 2);
+  clearPostList(blogListCarousel);
+
+  const newPost = await getPosts(page, 4);
   renderPosts(newPost, blogListCarousel);
 }
 
@@ -21,7 +23,7 @@ export async function onViewNext() {
   console.log("viewNext");
   page++;
 
-  const newPost = await getPosts(page, 2);
+  const newPost = await getPosts(page, 4);
   renderPosts(newPost, blogListCarousel);
 }
 
